@@ -3,9 +3,8 @@ import { ArrowUpRight } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
 const tabs = [
-  { key: "logos", label: "Logos & Brands", symbol: "✦" },
   { key: "websites", label: "Websites & Apps", symbol: "○" },
-  { key: "designs", label: "Social & Designs", symbol: "◆" },
+  { key: "logos", label: "Logos & Brands", symbol: "✦" },
 ];
 
 function ProjectCard({ project, onClick }) {
@@ -112,7 +111,7 @@ function ProjectCard({ project, onClick }) {
 }
 
 export default function Projects({ projects }) {
-  const [activeTab, setActiveTab] = useState("logos");
+  const [activeTab, setActiveTab] = useState("websites");
   const [selected, setSelected] = useState(null);
   const current = projects[activeTab] || [];
 
